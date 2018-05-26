@@ -20,7 +20,7 @@ const mgr = {
 			}
 
 			dataCached = await new Promise((resolve, reject) => {
-				chrome.storage.sync.get(KNOWN_CATEGORIES, data => resolve(data));
+				chrome.storage.local.get(KNOWN_CATEGORIES, data => resolve(data));
 			});
 
 			ready = true;
@@ -39,7 +39,7 @@ const mgr = {
 	},
 
 	flush: () => new Promise((resolve, reject) => {
-		chrome.storage.sync.set(dataCached, resolve);
+		chrome.storage.local.set(dataCached, resolve);
 	}),
 };
 

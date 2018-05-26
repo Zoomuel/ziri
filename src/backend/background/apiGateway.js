@@ -14,6 +14,12 @@ const todoItemsMutex = locks.createMutex();
 const methodMap = new Map([
 	['loadModel', async () => {
 		const mgrStorageInstance = await mgrStorage.instance();
+		const mgrCrawlInstance = await mgrCrawl.instance();
+
+		if (mgrCrawlInstance.empty()) {
+			await mgrCrawlInstance.refillCrawlers(true);
+		}
+
 		const settings = mgrStorageInstance.get('settings');
 		const todo = mgrStorageInstance.get('todo');
 		const crawl = (await mgrCrawl.instance()).getData(settings.photoChangeInterval);

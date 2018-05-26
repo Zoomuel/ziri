@@ -49,7 +49,7 @@ chrome.runtime.onInstalled.addListener((details) => {
 	(async () => {
 		if (details.reason === 'install') {
 			sdkUtils.debug('Installed, set default storage');
-			await chrome.storage.sync.set(config.defaultStorage);
+			await chrome.storage.local.set(config.defaultStorage);
 		}
 		if (details.reason === 'install' || details.reason === 'update') {
 			sdkUtils.debug('Updated, refill crawlers');

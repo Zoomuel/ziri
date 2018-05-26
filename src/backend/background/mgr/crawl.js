@@ -40,6 +40,10 @@ const mgr = {
 		});
 	},
 
+	empty: () => {
+		return crawlers.every(c => c.empty());
+	},
+
 	refillCrawlers: async (force = false) => {
 		await sdkUtils.criticalSection(mutex, async () => {
 			sdkUtils.debug('refillCrawlers');
