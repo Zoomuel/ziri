@@ -1,0 +1,77 @@
+{
+	"app_name": {
+		"message": "ZIRI"
+	},
+	"app_description": {
+		"message": "賞心悅目的新分頁，加一些小工具^Q^"
+	},
+	"common_ask_name": {
+		"message": "該如何稱呼您？"
+	},
+	"common_start_now": {
+		"message": "開始使用"
+	},
+	"tooltip_settings_btn": {
+		"message": "設定圖片訂閱及其它小工具"
+	},
+	"tooltip_contact_us_btn": {
+		"message": "如遇到問題，歡迎聯絡作者"
+	},
+	"subscriptions": {
+		"message": "訂閱"
+	},
+	"subscriptions_desc": {
+		"message": "好照片，好心情！"
+	},
+	"subscriptions_no_available": {
+		"message": "您尚未訂閱任何有效的圖片來源😭"
+	},
+	"photo_change_interval": {
+		"message": "照片輪替間隔(分)"
+	},
+	"photo_subscribe_source": {
+		"message": "訂閱來源"
+	},
+	"photo_subscribe_placeholder": {
+		"message": "輸入帳號"
+	},
+	"photo_subscribe_add": {
+		"message": "新增"
+	},
+	"photo_subscribe_del": {
+		"message": "刪除"
+	},
+	"photo_recrawl": {
+		"message": "重新抓取"
+	},
+	"clock": {
+		"message": "時鐘"
+	},
+	"clock_desc": {
+		"message": "時間是真理的摯友"
+	},
+	"clock_show_number": {
+		"message": "顯示數字"
+	},
+	"clock_show_second": {
+		"message": "顯示秒針"
+	},
+	"todo": {
+		"message": "待辦事項"
+	},
+	"todo_desc": {
+		"message": "各個擊破，不怕不怕"
+	},
+	"todo_new": {
+		"message": "New Todo"
+	},
+	"todo_auto_clean": {
+		"message": "定期清除已完成項目"
+	},
+	"about": {
+		"message": "關於"
+	},
+	"acknowledge_desc": {
+		"message": "ZIRI stands on the shoulder of the giants below:"
+	}
+}
